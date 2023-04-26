@@ -842,9 +842,10 @@ a.button-decorated:not([href]) {
   list-style-type: none;
   margin: 11px 0 10px 0;
   padding: 0;
-  justify-content: space-between;
-  gap: 10px;
-  max-width: 471px;
+  justify-content: flex-start;
+  column-gap: 44px;
+  row-gap: 10px;
+  max-width: 472px;
   flex-grow: 1;
   z-index: 1;
 }
@@ -2977,7 +2978,8 @@ a.button-decorated:not([href]) {
 
 .information:focus,
 .information:focus-visible {
-  outline: none;
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .information:hover .count-information,
